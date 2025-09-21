@@ -1,0 +1,47 @@
+package conta_bancaria;
+import java.util.Scanner;
+public class Menu {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		int opcao;
+		
+		while (true) { 
+		
+		
+		System.out.println("===========================================");
+		System.out.println("                                           ");
+		System.out.println("           Banco Ecosol                    ");
+		System.out.println("                                           ");
+		System.out.println("===========================================");
+		System.out.println("      1 -  Criar Conta                     ");
+		System.out.println("      2 -  Listar todas as Contas          ");
+		System.out.println("      3 -  Buscar conta por número         ");
+		System.out.println("      4 -  Atualizar dados da conta        ");
+		System.out.println("      5 -  Apagar conta                    ");
+		System.out.println("      6 -  Sacar                           ");
+		System.out.println("      7 -  Depositar                       ");
+		System.out.println("      8 -  Transferir valor entre Contas   ");
+		System.out.println("      0 -  Sair                            ");
+		
+		opcao = leia(NextInt();
+		
+		
+		}
+		
+		
+		
+	}
+
+	private static int leia(Object nextInt) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private static Object NextInt() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
