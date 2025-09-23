@@ -1,0 +1,92 @@
+package conta_bancaria;
+import java.util.Scanner;
+public class Menu {
+
+	public static void main(String[] args) {
+	    Scanner leia = new Scanner(System.in);
+	  	}
+
+		int opcao;
+		
+		while (true) { 
+				
+		System.out.println("===========================================");
+		System.out.println("                                           ");
+		System.out.println("           Banco Ecosol                    ");
+		System.out.println("                                           ");
+		System.out.println("===========================================");
+		System.out.println("      1 -  Criar Conta                     ");
+		System.out.println("      2 -  Listar todas as Contas          ");
+		System.out.println("      3 -  Buscar conta por número         ");
+		System.out.println("      4 -  Atualizar dados da conta        ");
+		System.out.println("      5 -  Apagar conta                    ");
+		System.out.println("      6 -  Sacar                           ");
+		System.out.println("      7 -  Depositar                       ");
+		System.out.println("      8 -  Transferir valor entre Contas   ");
+		System.out.println("      0 -  Sair                            ");
+		
+		opcao = leia.nextInt();
+		
+		if (opcao == 0) {
+			System.out.println("\nBanco Ecosol - economia justa e solidária");
+			sobre();
+			leia.close();
+			System.exit(0);
+		}
+		
+		switch(opcao) {
+		case 1:
+	        System.out.println("Criar nova conta\n\n");
+	        break;
+	    case 2:
+	        System.out.println("Listar todas as Contas\n\n");
+	        break;
+	    case 3:
+	        System.out.println("Consultar dados da Conta - por número\n\n");
+	        break;
+	    case 4:
+	        System.out.println("Atualizar dados da Conta\n\n");
+	        break;
+	    case 5:
+	        System.out.println("Apagar a Conta\n\n");
+	        break;
+	    case 6:
+	        System.out.println("Saque\n\n");
+	        break;
+	    case 7:
+	        System.out.println("Depósito\n\n");
+	        break;
+	    case 8:
+	        System.out.println("Transferência entre Contas\n\n");
+	        break;
+	    default:
+	        System.out.println("\nOpção Inválida!\n");
+	}
+		}
+		}
+		
+		public static void sobre() {
+			System.out.println("\n*********************************************************");
+			System.out.println("Projeto Desenvolvido por: Carina Bentlin ");
+			System.out.println("Generation Brasil - carinabentlin@gmail.com");
+			System.out.println("github.com/carinabentlin");
+			System.out.println("*********************************************************");
+		
+	}
+
+	private static void sobre1() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static int leia(Object nextInt) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private static Object NextInt() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
