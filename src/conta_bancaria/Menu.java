@@ -46,7 +46,7 @@ public class Menu {
 		 
 		 
 		 //conta poupança
-		 ContaPoupanca cp1 = new ContaPoupanca(4, 789, 2, "Maria da Silva", 5000.00f, 1);
+		 ContaPoupanca cp1 = new ContaPoupanca(4, 789, 2, "Maria da Silva", 5000.00f, 20);
 		 cp1.visualizar();
 
 		 // Testar saque
