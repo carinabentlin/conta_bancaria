@@ -2,6 +2,8 @@ package conta_bancaria;
 import java.util.Scanner;
 import conta.util.Cores;
 import conta_bancaria.model.Conta;
+import conta_bancaria.model.ContaCorrente;
+import conta_bancaria.model.ContaPoupanca;
 public class Menu {
 
 	public static void main(String[] args) {
@@ -25,6 +27,39 @@ public class Menu {
 		
 		Scanner leia = new Scanner(System.in); 	// Scanner para ler a escolha do usuário no menu
 		int opcao;
+		
+		
+		ContaCorrente cc1 = new ContaCorrente (3, 456, 1, "Thuany Silva", 1000000.00f, 10000.00f);
+		
+		cc1.visualizar();
+		
+		//sacar da conta corrente
+		 System.out.println(cc1.sacar(2000000.00f));
+		 cc1.visualizar();
+		 
+		 System.out.println(cc1.sacar(20000.00f));
+		 cc1.visualizar();
+		 
+		 //depositar conta corrente
+		 cc1.depositar(5000.00f);
+		 cc1.visualizar();
+		 
+		 
+		 //conta poupança
+		 ContaPoupanca cp1 = new ContaPoupanca(4, 789, 2, "Maria da Silva", 5000.00f, 1);
+		 cp1.visualizar();
+
+		 // Testar saque
+		 System.out.println(cp1.sacar(6000.00f)); // Deve falhar (saldo insuficiente)
+		 cp1.visualizar();
+
+		 System.out.println(cp1.sacar(1000.00f)); // Deve funcionar
+		 cp1.visualizar();
+
+		 // Testar depósito
+		 cp1.depositar(2000.00f);
+		 cp1.visualizar();
+
 		
 		// Loop infinito para exibir o menu até o usuário escolher sair
 		while (true) { 

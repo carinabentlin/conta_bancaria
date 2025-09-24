@@ -18,6 +18,9 @@
 	
 		}
 
+		public Conta() {} //sobrecarga de metodo
+		
+		//metodo get e set
 		public int getNumero() {
 			return numero;
 		}
@@ -86,6 +89,10 @@
 			case 2:
 				tipo = "Conta Poupança";
 				break;
+			case 3:
+				tipo = "Desconhecido";
+				break;
+				
 			}
 
 			System.out.println("\n\n***********************************************************");
