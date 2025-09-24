@@ -6,24 +6,27 @@ public class Menu {
 
 	public static void main(String[] args) {
 		
-		// Teste da Classe Conta
+		//Criação de um objeto da classe Conta (id, agência, tipo, titular, saldo inicial)
         Conta c1 = new Conta(1, 123, 1, "Carina Bentlin", 10000.0f);
 
-        c1.visualizar();
+        c1.visualizar();  // Mostra os dados da conta criada
 
+        
+     // Atualiza o saldo e o nome do titular
         c1.setSaldo(15000.0f);
 	    c1.setTitular("Osório");
 		c1.visualizar();
 
-        c1.sacar(12000.0f);
+        c1.sacar(12000.0f);   //fazer saque
 		c1.visualizar();
 
-        c1.depositar(5000.0f);
+        c1.depositar(5000.0f); //fazer depósito
 		c1.visualizar();
 		
-		Scanner leia = new Scanner(System.in);
+		Scanner leia = new Scanner(System.in); 	// Scanner para ler a escolha do usuário no menu
 		int opcao;
 		
+		// Loop infinito para exibir o menu até o usuário escolher sair
 		while (true) { 
 		System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
 		       +           "===========================================");
@@ -44,13 +47,16 @@ public class Menu {
 		
 		opcao = leia.nextInt();
 		
-		if (opcao == 0) {
+		if (opcao == 0) { 	// Lê a opção escolhida . // Se a opção for 0, o programa finaliza
+			
 			System.out.println(Cores.TEXT_WHITE_BOLD +"\nBanco Ecosol - economia justa e solidária");
-			sobre();
+			sobre(); // Mostra informações sobre o sistema
 			leia.close();
-			System.exit(0);
+			System.exit(0); // Encerra o programa
 		}
 		
+		
+		// Verifica qual opção o usuário escolheu
 		switch(opcao) {
 		case 1:
 	        System.out.println(Cores.TEXT_WHITE + "Criar nova conta\n\n");
@@ -77,12 +83,12 @@ public class Menu {
 	        System.out.println(Cores.TEXT_WHITE +"Transferência entre Contas\n\n");
 	        break;
 	    default:
-	        System.out.println(Cores.TEXT_RED +"\nOpção Inválida!\n" +Cores.TEXT_RESET);
+	        System.out.println(Cores.TEXT_RED +"\nOpção Inválida!\n" +Cores.TEXT_RESET);   // Caso o usuário digite um número fora das opções
 	        break;
 	}
 		}
 		}
-		
+	// Informações sobre quem desenvolveu o projeto
 		public static void sobre() {
 			System.out.println("\n*********************************************************");
 			System.out.println("Projeto Desenvolvido por: Carina Bentlin ");
