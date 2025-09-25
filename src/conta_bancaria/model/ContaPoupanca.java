@@ -5,7 +5,7 @@ public class ContaPoupanca extends Conta{
 		
 		private int diaAniversario;
 			
-		public ContaPoupanca(int numero, int agencia, int tipo, String titular, float saldo, int diaAniversario) {  //método construtor - Conta Corrente é um tipo de conta
+		public ContaPoupanca(int numero, int agencia, int tipo, String titular, float saldo, int diaAniversario) {  //método construtor - 
 			super(numero, agencia, tipo, titular, saldo);
 			this.diaAniversario = diaAniversario;
 			
